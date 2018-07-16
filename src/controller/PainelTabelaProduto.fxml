@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox fx:id="painelTabelaProduto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProdutoController">
+   <children>
+      <ToolBar fx:id="toolBarMenuProduto" prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="buttonCadastrar" mnemonicParsing="false" onAction="#tratarBotaoCadastrar" prefHeight="31.0" prefWidth="104.0" text="Cadastrar" />
+            <Button fx:id="buttonEditar" mnemonicParsing="false" onAction="#tratarBotaoEditar" prefHeight="31.0" prefWidth="91.0" text="Editar" />
+            <Button fx:id="buttonRemover" mnemonicParsing="false" onAction="#tratarBotaoRemover" prefHeight="31.0" prefWidth="103.0" text="Remover" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tableViewProdutos" prefHeight="357.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tableColumnCodigo" prefWidth="182.0" text="Código" />
+          <TableColumn fx:id="tableColumnNome" prefWidth="239.0" text="Nome" />
+            <TableColumn fx:id="tableColumnPreco" prefWidth="178.0" text="Preço" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

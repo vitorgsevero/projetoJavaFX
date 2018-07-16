@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="painelTabelaPaciente" prefHeight="350.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClienteController">
+   <children>
+      <ToolBar fx:id="toolBarMenu" prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="buttonCadastrar" mnemonicParsing="false" onAction="#tratarBotaoCadastrar" text="Cadastrar" />
+            <Button fx:id="buttonEditar" mnemonicParsing="false" onAction="#tratarBotaoEditar" prefHeight="31.0" prefWidth="83.0" text="Editar" />
+            <Button fx:id="buttonRemover" mnemonicParsing="false" onAction="#tratarBotaoRemover" prefHeight="31.0" prefWidth="83.0" text="Remover" />
+        </items>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ToolBar>
+      <TableView fx:id="tableViewClientes" editable="true" prefHeight="378.0" prefWidth="454.0">
+        <columns>
+          <TableColumn fx:id="tableColumnNome" prefWidth="113.0" text="Nome" />
+          <TableColumn fx:id="tableColumnCPF" prefWidth="189.0" text="CPF" />
+            <TableColumn fx:id="tableColumnDataNascimento" prefWidth="209.0" text="Data Nascimento" />
+        </columns>
+         <columnResizePolicy>
+  
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</VBox>

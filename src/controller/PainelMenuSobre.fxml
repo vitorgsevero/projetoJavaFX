@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="painelMenuPrincipal" prefHeight="400.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuPrincipalController">
+   <children>
+      <MenuBar fx:id="menuBarPrincipal" layoutY="-2.0" prefHeight="32.0" prefWidth="600.0">
+        <menus>
+          <Menu fx:id="menuClientes" mnemonicParsing="false" text="Clientes">
+            <items>
+              <MenuItem fx:id="menuItemClientes" mnemonicParsing="false" onAction="#tratarMenuClientes" text="Ir para Menu de Clientes" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuProdutos" mnemonicParsing="false" text="Produtos">
+            <items>
+              <MenuItem fx:id="menuItemProdutos" mnemonicParsing="false" onAction="#tratarMenuProdutos" text="Ir para Menu de Produtos" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuSistema" mnemonicParsing="false" text="Sistema">
+            <items>
+              <MenuItem fx:id="menuItemSobre" mnemonicParsing="false" text="Sobre" />
+                  <MenuItem fx:id="menuItemSair" mnemonicParsing="false" onAction="#tratarMenuSair" text="Sair do Sistema" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea editable="false" layoutX="59.0" layoutY="62.0" prefHeight="262.0" prefWidth="431.0" promptText="Sobre" text="&#10;O sistema foi desenvolvido em linguagem Java utilizando Interfaces gráficas do JavaFX (FXML), padrões como MVC e DAO e as informações são salvas no SGBD PostgresSQL. O código fonte do projeto está disponível em um repositorio do Github, no seguinte endereço: &#10;https://github.com/vitorgsevero/projetoFinalJavaFX&#10;&#10;Desenvolvido por: Vítor Severo&#10;&#10;Versão do Software: 1.0&#10;&#10;&#10;Copyright © Todos os direitos reservados." wrapText="true" />
+      <Text layoutX="236.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sobre" wrappingWidth="58.908203125">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
